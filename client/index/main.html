@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+        <link rel="stylesheet" href="{{static_url('login/assets/bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{static_url('login/assets/font-awesome/css/font-awesome.min.css')}}">
+		<link rel="stylesheet" href="{{static_url('login/assets/css/form-elements.css')}}">
+        <link rel="stylesheet" href="{{static_url('login/assets/css/style.css')}}">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="static/login/assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{static_url('login/assets/ico/apple-touch-icon-144-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{static_url('login/assets/ico/apple-touch-icon-114-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{static_url('login/assets/ico/apple-touch-icon-72-precomposed.png')}}">
+        <link rel="apple-touch-icon-precomposed" href="{{static_url('login/assets/ico/apple-touch-icon-57-precomposed.png')}}">
+
+</head>
+<body>
+<div id="">
+<ul class="nav nav-pills nav-stacked">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+</div>
+<div id="my_path">
+    <ol class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Library</a></li>
+        {% if data != 'java'%}
+      <li class="active">Data</li>
+        {% end %}
+    </ol>
+</div>
+<!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+<script type="text/javascript" src="{{static_url('index/plugins/jquery.min.js')}}"></script>
+		<script type="text/javascript" src="{{static_url('index/bootstrap/js/bootstrap.min.js')}}"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="{{static_url('index/plugins/modernizr.js')}}"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="{{static_url('index/plugins/isotope/isotope.pkgd.min.js')}}"></script>
+
+		<!-- Backstretch javascript -->
+		<script type="text/javascript" src="{{static_url('index/plugins/jquery.backstretch.min.js')}}"></script>
+
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="{{static_url('index/plugins/jquery.appear.js')}}"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="{{static_url('index/js/template.js')}}"></script>
+
+		<!-- Custom Scripts -->
+		<script type="text/javascript" src="{{static_url('index/js/custom.js')}}"></script>
+</body>
+</html>
