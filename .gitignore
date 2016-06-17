@@ -6,6 +6,7 @@ __pycache__/
 # C extensions
 *.so
 .idea/
+
 # Distribution / packaging
 .Python
 env/
@@ -87,4 +88,7 @@ ENV/
 
 # Rope project settings
 .ropeproject
+<<<<<<< HEAD
 Status API Training Shop Blog About
+=======
+>>>>>>> 421e582b7f362771b584e4453c5d885994b5e313
